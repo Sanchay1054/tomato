@@ -2,5 +2,6 @@ body
 {
 font:19px;
 background-image:url("pngtree-simple-blue-white-background-image_1416601.png");
-  background-repeat:no-repeat;
+background-repeat:no-repeat;
+height:100%;
 }
