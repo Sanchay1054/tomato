@@ -1,0 +1,75 @@
+<html>
+<link href="C:/Users/sanch/OneDrive/Desktop/SANCHAY/React Projects/tgc/src/Language/Location/location.css" rel="stylesheet">
+<script>
+var temp = "";
+function fun()
+{
+//document.getElementById("name1").innerHTML = "Khaitan Chemicals";
+var searchText = document.getElementById("name").value;
+if((searchText=="Bio" || searchText=="bio") && temp!=searchText)
+{
+document.getElementById("name1").innerHTML = "Jaipur Bio";
+document.getElementById("name2").innerHTML = "Symbor67";
+document.getElementById("name3").innerHTML = "Riddhi";
+}
+else if((searchText=="Chemical" || searchText=="chemical") && temp!=searchText)
+{
+document.getElementById("name1").innerHTML = "Khaitan Chemicals";
+document.getElementById("name2").innerHTML = "Madras Fertilizers";
+document.getElementById("name3").innerHTML = "AgriBegri";
+}
+else if(searchText!="" && temp!=searchText)
+{
+window.open("https://www.google.com/search?q="+searchText+"+fertilizer");
+document.getElementById("name1").innerHTML = "Select Any One";
+document.getElementById("name2").innerHTML = "";
+document.getElementById("name3").innerHTML = "";
+}
+temp = searchText;
+}
+</script>
+<script>
+var temp = "";
+function fun2()
+{
+var searchText = document.getElementById("loc").value;
+if(searchText!="" && temp!=searchText)
+{
+window.open("https://www.google.com/maps/place/"+searchText+"+Fertilizer+shop");
+}
+temp = searchText;
+}
+</script>
+<head>
+<title>TOMATIX DEALER</title>	
+</head>
+
+<body>
+<div class="tit">
+<img src="download-removebg-preview.png" height="5%" style="padding:0%;margin:0%;float:left;"/>
+TOMATIX
+</div>
+<div class="product-lwg">
+<div class="product"><div class="search-box"> <p style="color:#00CCEE;font-weight:bold;font-size:25px;cursor:pointer;" onclick="fun()">Search <img src="download__1_-removebg-preview.png" height="3%" width="3%" style="margin:0px 10px 0px 0px;"/><input type="text" id="name" placeholder="Type Bio or Chemical"/></p></div>
+<table cellspacing="50px"><tr>
+<td><a href="https://www.jaipurbiofertilizer.com/" target="_blank"><div class="fertiliser"><p>Jaipur Bio</p><p>Category: Bio</p><p>Since 1966</p></div></a></td>
+<td><a href="https://symborg.com/en/biofertilizers/" target="_blank"><div class="fertiliser"><p>Symbor67</p><p>Category: Bio</p><p>An Agriscience Business</p></div></a></td>
+<td><a href="https://www.agroinfomart.com/Riddhi-Siddhi-Magnesia-Works" target="_blank"><div class="fertiliser"><p>Riddhi</p><p>Category: Bio</p><p>Reaping Riches</p></div></a></td>
+</tr>
+<tr>
+<td><a href="https://kcfl.co.in/" target="_blank"><div class="fertiliser"><p>Khaitan Chemicals</p><p>Category: Chemical</p><p> 40% More On Your Production</p></div></a></td>
+<td><a href="https://madrasfert.co.in/" target="_blank"><div class="fertiliser"><p>Madras Fertilizers</p><p>Category: Chemical</p><p>  Gov. of India</p></div></a></td>
+<td><a href="https://agribegri.com/fertilizers/buy-cheap-chemical-fertilizers-online-in-india.php" target="_blank"><div class="fertiliser"><p>AgriBegri</p><p>Category: Chemical</p><p>Top Quality fertilizer</p></div></a></td>
+</tr>
+</table>
+
+</div>
+<div class="webpage-location-gm"><h2>View in Google Maps</h2><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62589.37145742537!2d77.67419732946871!3d11.346707447557145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba96f46762f4671%3A0xd97da6e3d9c7f75e!2sErode%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1695052270453!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<div class="search-box"><p style="color:#00CCEE;font-weight:bold;font-size:25px;cursor:pointer;" onclick="fun2()">Search <img src="download__1_-removebg-preview.png" height="3%" width="3%" style="margin:0px 10px 0px 0px;"/><input type="text" id="loc" placeholder="Enter Location"></p></div>
+<p id="name1">a</p>
+<p id="name2"></p>
+<p id="name3"></p>
+</div>
+</div>
+</body>
+</html>

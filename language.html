@@ -1,18 +1,81 @@
 <html>
-<link href="language.css" rel="stylesheet">
+<link href="C:/Users/sanch/OneDrive/Desktop/SANCHAY/React Projects/tgc/src/Language/language.css" rel="stylesheet">
+<script>
+let a=1;
+function languageToState()
+{
+if(a==1)
+{
+document.getElementById("name1").innerHTML = "TamilNadu";
+document.getElementById("name2").innerHTML = "Kerala";
+document.getElementById("name3").innerHTML = "Karnataka";
+document.getElementById("name4").innerHTML = "Andhra / Telungana";
+document.getElementById("name5").innerHTML = "Delhi";
+document.getElementById("name6").innerHTML = "English (USA)";
+document.getElementById("button").innerHTML = "Select your State";
+a=0;
+}
+else if(a==0)
+{
+document.getElementById("name1").innerHTML = "Tamil";
+document.getElementById("name2").innerHTML = "Malayalam";
+document.getElementById("name3").innerHTML = "Kannada";
+document.getElementById("name4").innerHTML = "Telugu";
+document.getElementById("name5").innerHTML = "Hindi";
+document.getElementById("name6").innerHTML = "English";
+document.getElementById("button").innerHTML = "Change From Language To State";
+a=1;
+}
+}
+function tamilChange()
+{
+document.getElementById("language").src = "junk-food-pongal-thai-pongal-brampton-kuala-lumpur-adyar-ananda-bhavan-tamil-nadu-tamils-png-clipart-removebg-preview.png";
+}
+function malayalamChange()
+{
+document.getElementById("language").src = "istockphoto-484441554-612x612-removebg-preview.png";
+}
+function kannadaChange()
+{
+document.getElementById("language").src = "photo-1600112356915-089abb8fc71a-removebg-preview.png";
+}
+function teluguChange()
+{
+document.getElementById("language").src = "download__7_-removebg-preview.png";
+}
+function hindiChange()
+{
+document.getElementById("language").src = "download__8_-removebg-preview.png";
+}
+function appleChange()
+{
+document.getElementById("language").src = "download-removebg-preview.png";
+
+}; 
+</script>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 <head>
 <title>TOMATIX</title>
 </head>
 
 <body>
-
-Choose Your Language
+<div class="tit">
+<img src="download-removebg-preview.png" height="5%" style="padding:0%;margin:0%;float:left;"/>
+TOMATIX
+</div>
+<div class="language-box-position">
+<div class="language-box">
+<h1>Choose Your Language</h1>
 <br>
-Tamil<br>
-Malayalam<br>a
-Kannada<br>Telugu<br>
-Hindi<br>
-English
+<p id="name1" onmouseenter="tamilChange()" onmouseout="appleChange()">Tamil</p><br>
+<p id="name2" onmouseenter="malayalamChange()" onmouseout="appleChange()">Malayalam</p><br>
+<p id="name3" onmouseenter="kannadaChange()" onmouseout="appleChange()">Kannada</p><br><p id="name4" onmouseenter="teluguChange()" onmouseout="appleChange()">Telugu</p><br>
+<p id="name5" onmouseenter="hindiChange()" onmouseout="appleChange()">Hindi</p><br>
+<p id="name6">English</p><br>
+<div id="button" class="button"onclick="languageToState()">Change From Language To State</div>
+</div>
+</div>
+<img src="tomatoes-on-a-transparent-background-free-png.jpeg" id="language" height="32%" width="27%" style="float:right"/>
 
 </body>
 </html>
